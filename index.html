@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yugendra Sai Purilla | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+
+      .glass-card {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition:
+          transform 0.3s ease,
+          border-color 0.3s ease;
+      }
+
+      .glass-card:hover {
+        transform: translateY(-5px);
+        border-color: #38bdf8;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .nav-link {
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: #38bdf8;
+      }
+
+      .skill-tag {
+        background: rgba(56, 189, 248, 0.1);
+        color: #38bdf8;
+        border: 1px solid rgba(56, 189, 248, 0.2);
+        padding: 4px 12px;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-sky-500/30">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 w-full z-50 glass-card border-none bg-slate-900/80 backdrop-blur-md"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <span class="text-xl font-bold gradient-text">YUGENDRA.DEV</span>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <a
+          href="mailto:yugendrasai1919@gmail.com"
+          class="px-5 py-2 bg-sky-500 hover:bg-sky-600 rounded-lg font-semibold transition-all"
+          >Hire Me</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="min-h-screen flex items-center justify-center px-6 pt-20"
+    >
+      <div class="max-w-4xl text-center">
+        <h2 class="text-sky-400 font-semibold tracking-widest mb-4 uppercase">
+          Full Stack Developer
+        </h2>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          Yugendra Sai Purilla
+        </h1>
+        <p
+          class="text-xl text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto"
+        >
+          Specializing in <span class="text-white font-semibold">Angular</span>,
+          <span class="text-white font-semibold">.NET Core</span>, and
+          <span class="text-white font-semibold">NestJS</span>. I build
+          enterprise-grade architectures and hyperautomation platforms that
+          scale.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="#experience"
+            class="px-8 py-3 bg-slate-800 border border-slate-700 hover:border-sky-500 rounded-xl transition-all"
+            >View Work</a
+          >
+          <a
+            href="#contact"
+            class="px-8 py-3 bg-sky-500 hover:bg-sky-600 rounded-xl transition-all font-semibold"
+            >Get in Touch</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section id="about" class="py-24 px-6 bg-slate-900/50">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="text-3xl font-bold mb-6">
+              Expertise in <span class="gradient-text">Scalable Solutions</span>
+            </h3>
+            <p class="text-slate-400 text-lg leading-relaxed mb-6">
+              With over 3 years of experience, I focus on designing complex ERP
+              solutions and workflow engines. I bridge the gap between robust
+              backend engineering and high-performance, responsive UIs.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 glass-card rounded-xl">
+                <h4 class="text-sky-400 text-2xl font-bold">3+</h4>
+                <p class="text-sm text-slate-500">Years Experience</p>
+              </div>
+              <div class="p-4 glass-card rounded-xl">
+                <h4 class="text-sky-400 text-2xl font-bold">5+</h4>
+                <p class="text-sm text-slate-500">Enterprise Projects</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+              <div class="bg-sky-500/10 p-3 rounded-lg">
+                <i class="fas fa-layer-group text-sky-400"></i>
+              </div>
+              <div>
+                <h4 class="font-bold mb-1">Architecting Hyperautomation</h4>
+                <p class="text-sm text-slate-400">
+                  Building visual drag-and-drop components and low-code
+                  platforms.
+                </p>
+              </div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+              <div class="bg-indigo-500/10 p-3 rounded-lg">
+                <i class="fas fa-microchip text-indigo-400"></i>
+              </div>
+              <div>
+                <h4 class="font-bold mb-1">AI Integration</h4>
+                <p class="text-sm text-slate-400">
+                  Infusing applications with smart features to improve
+                  operational efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold mb-12 text-center">
+          Professional <span class="gradient-text">Experience</span>
+        </h3>
+
+        <div class="space-y-12">
+          <!-- Amzur -->
+          <div class="relative pl-8 border-l-2 border-sky-500">
+            <div
+              class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-sky-500 shadow-[0_0_10px_#38bdf8]"
+            ></div>
+            <div class="flex flex-wrap justify-between items-start mb-4">
+              <div>
+                <h4 class="text-xl font-bold">Amzur Infotech</h4>
+                <p class="text-sky-400">Full Stack Developer (Hybrid)</p>
+              </div>
+              <span class="text-slate-500 text-sm">Sep 2025 - Present</span>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+              <h5 class="font-bold mb-2">
+                Project: Stackyon (Low-Code Platform)
+              </h5>
+              <ul class="text-slate-400 space-y-2 list-disc ml-5">
+                <li>
+                  Developing enterprise-grade rapid modernization platform using
+                  .NET Core & Angular.
+                </li>
+                <li>
+                  Building drag-and-drop workflow engines to accelerate
+                  development cycles.
+                </li>
+                <li>
+                  Integrating AI-powered features and complex data modeling
+                  schemas.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Technoflair -->
+          <div class="relative pl-8 border-l-2 border-slate-700">
+            <div
+              class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"
+            ></div>
+            <div class="flex flex-wrap justify-between items-start mb-4">
+              <div>
+                <h4 class="text-xl font-bold">
+                  Technoflair Software Solutions
+                </h4>
+                <p class="text-sky-400">Full Stack Developer</p>
+              </div>
+              <span class="text-slate-500 text-sm">Feb 2022 - Aug 2025</span>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="glass-card p-6 rounded-2xl">
+                <h5 class="font-bold mb-2">TFAPPS (ERP)</h5>
+                <p class="text-sm text-slate-400 mb-3">
+                  All-in-one ERP for Employee & Work Management built with
+                  Angular & NestJS.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="skill-tag text-xs">NestJS</span>
+                  <span class="skill-tag text-xs">Ag-Grid</span>
+                </div>
+              </div>
+              <div class="glass-card p-6 rounded-2xl">
+                <h5 class="font-bold mb-2">EZYHIRE (Recruitment)</h5>
+                <p class="text-sm text-slate-400 mb-3">
+                  ATS with automated resume parsing and efficient search
+                  algorithms.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="skill-tag text-xs">Node.js</span>
+                  <span class="skill-tag text-xs">REST APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 bg-slate-900/50">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold mb-12 text-center">
+          Technical <span class="gradient-text">Arsenal</span>
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Frontend -->
+          <div class="glass-card p-8 rounded-2xl">
+            <div class="text-sky-400 text-3xl mb-4">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-4">Frontend</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">Angular (6-18)</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">HTML5/CSS3</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Angular Material</span>
+              <span class="skill-tag">Kendo UI</span>
+              <span class="skill-tag">DevExtreme</span>
+              <span class="skill-tag">JointJS</span>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="glass-card p-8 rounded-2xl">
+            <div class="text-indigo-400 text-3xl mb-4">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-4">Backend</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">.NET Core</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">NestJS</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">ASP.NET Web API</span>
+            </div>
+          </div>
+          <!-- Data & Tools -->
+          <div class="glass-card p-8 rounded-2xl">
+            <div class="text-emerald-400 text-3xl mb-4">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-4">Databases & Tools</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Git/GitLab</span>
+              <span class="skill-tag">Retool</span>
+              <span class="skill-tag">PgAdmin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Personal -->
+    <section class="py-24 px-6">
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-bold mb-8">Education</h3>
+          <div class="space-y-6">
+            <div class="border-l-2 border-slate-700 pl-4">
+              <h4 class="font-bold">Master of Computer Applications (MCA)</h4>
+              <p class="text-slate-400">AKNU University, Rajahmundry</p>
+              <p class="text-sky-400 text-sm">CGPA: 7.79</p>
+            </div>
+            <div class="border-l-2 border-slate-700 pl-4">
+              <h4 class="font-bold">B.Sc. Computers</h4>
+              <p class="text-slate-400">BRR & GKR Chambers Degree College</p>
+              <p class="text-sky-400 text-sm">CGPA: 8.44</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold mb-8">Languages</h3>
+          <div class="flex gap-4">
+            <div
+              class="px-4 py-2 glass-card rounded-lg flex items-center gap-2"
+            >
+              <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+              English
+            </div>
+            <div
+              class="px-4 py-2 glass-card rounded-lg flex items-center gap-2"
+            >
+              <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+              Telugu
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold mt-12 mb-8">Attributes</h3>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="text-sm bg-slate-800 px-3 py-1 rounded border border-slate-700"
+              >Problem Solver</span
+            >
+            <span
+              class="text-sm bg-slate-800 px-3 py-1 rounded border border-slate-700"
+              >Self-Motivated</span
+            >
+            <span
+              class="text-sm bg-slate-800 px-3 py-1 rounded border border-slate-700"
+              >Quick Learner</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6 bg-slate-950">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-4xl font-bold mb-6">
+          Let's Build Something <span class="gradient-text">Great</span>
+        </h3>
+        <p class="text-slate-400 mb-10">
+          Currently available for challenging full-stack opportunities.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <a
+            href="mailto:yugendrasai1919@gmail.com"
+            class="p-6 glass-card rounded-2xl flex flex-col items-center"
+          >
+            <i class="fa-solid fa-envelope text-2xl text-sky-400 mb-3"></i>
+            <span class="text-sm text-slate-400"
+              >yugendrasai1919@gmail.com</span
+            >
+          </a>
+          <a
+            href="tel:+918499007735"
+            class="p-6 glass-card rounded-2xl flex flex-col items-center"
+          >
+            <i class="fa-solid fa-phone text-2xl text-sky-400 mb-3"></i>
+            <span class="text-sm text-slate-400">+91 8499007735</span>
+          </a>
+          <div class="p-6 glass-card rounded-2xl flex flex-col items-center">
+            <i class="fa-solid fa-location-dot text-2xl text-sky-400 mb-3"></i>
+            <span class="text-sm text-slate-400 text-center"
+              >Andhra Pradesh, India</span
+            >
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-6">
+          <a
+            href="#"
+            class="text-slate-400 hover:text-white text-2xl transition-all"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="#"
+            class="text-slate-400 hover:text-white text-2xl transition-all"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="#"
+            class="text-slate-400 hover:text-white text-2xl transition-all"
+            ><i class="fa-brands fa-stack-overflow"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm"
+    >
+      <p>&copy; 2024 Yugendra Sai Purilla. Built with Modern Tech Stack.</p>
+    </footer>
+  </body>
+</html>
